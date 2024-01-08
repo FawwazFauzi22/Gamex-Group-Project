@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamex</title>
+    <!--icon-->
+    <link rel="shortcut icon" href="img/fav2.png"image/x-icon">
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--swiper css file-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--Icon show password-->
+    <script src="https://kit.fontawesome.com/96bb1ec1f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--Nav bar-->
+        <div class="nav container">
+            <!--logo-->
+            <a href="homepage.html" class="logo">Gamex<span>store</span></a>
+            <!--Nav icon-->
+            <div class="a nav-icon">
+                <i class='bx bxs-bell bx-tada' id="bell-icon"><span></span></i>
+                <i class='bx bx-cart-alt' id="cart-icon"></i>
+                <i class='bx bxs-user' id="show-login"></i>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <!--menu-->
+            <div class="menu">
+                <img src="img/Honkai_Star_Rail.webp" alt="">
+                <div class="navbar">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#feature">Featured</a></li>
+                    <li><a href="#Fantasy">Fantasy Games</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </div>
+            </div>
+            <!--Notification-->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class='bx bxs-check-circle' ></i>
+                    <p>Game credits added. Enjoy your playtime!</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class='bx bx-x-circle' ></i>
+                    <p>Could not apply changes.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Homesection start-->
+    <section class="home container" id="home">
+        <img src="img/home2.png" alt="">
+        <div class="home-text">
+            <h1>TRAILBLAZE AMONG<BR>THE STARS</BR></h1>
+            <a href="#" class="btn">Topup Now</a>
+        </div>
+    </section>
+    <!--Homesection end-->
+
+    <!--Trending Section start-->
+    <section class="trending container" id="trending">
+        <div class="heading">
+            <i class='bx bxs-flame' ></i>
+            <h2>Trending Games</h2>
+        </div>
+        <!--content-->
+        <div class="trending-content swiper">
+            <div class="swiper-wrapper">
+                <!--slide 1-->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/trending9.jpg" alt="">
+                        <div class="box-text">
+                            <h2>Honkai Star Rail</h2>
+                            <h3>Sci-Fi</h3>
+                            <a href="#" class="btn2">Buy Credit</a>
+                        </div>
+                    </div>
+                </div>
+                 <!--slide 2-->
+                 <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/trending1.webp" alt="">
+                        <div class="box-text">
+                            <h2>Cyberpunk 2077</h2>
+                            <h3>Action</h3>
+                            <a href="#" class="btn2">Buy Credit</a>
+                        </div>
+                    </div>
+                </div>
+                 <!--slide 3-->
+                 <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/trending2.jpg" alt="">
+                        <div class="box-text">
+                            <h2>Battlefield 2042</h2>
+                            <h3>Action</h3>
+                            <a href="#" class="btn2">Buy Credit</a>
+                        </div>
+                    </div>
+                </div>
+                 <!--slide 4-->
+                 <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/new12.jpg" alt="">
+                        <div class="box-text">
+                            <h2>Valorant</h2>
+                            <h3>Action</h3>
+                            <a href="#" class="btn2">Buy Credit</a>
+                        </div>
+                    </div>
+                </div>
+                 <!--slide 5-->
+                 <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/new13.jpg" alt="">
+                        <div class="box-text">
+                            <h2>Genshi Impact</h2>
+                            <h3>Fantasy</h3>
+                            <a href="#" class="btn2">Buy Credit</a>
+                        </div>
+                    </div>
+                </div>
+                <!--slide 6-->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/trending5.png" alt="">
+                        <div class="box-text">
+                            <h2>GTA V</h2>
+                            <h3>Crime</h3>
+                            <a href="#" class="btn2">Buy Credit</a>
+                        </div>
+                    </div>
+                </div>
+                <!--slide 7-->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/trending10.webp" alt="">
+                        <div class="box-text">
+                            <h2>Mobile Legends</h2>
+                            <h3>Moba</h3>
+                            <a href="#" class="btn2">Buy Credit</a>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+        </div>
+    </section>
+    <!--Trending Section end-->
+
+    <!--Feature Game start-->
+    <section class="new container" id="feature">
+        
+            <div class="heading">
+                <i class='bx bx-game' ></i>
+                <h2>Featured games</h2>
+            </div>
+            <!--content-->
+        <div class="feature">
+            <!--box1-->
+                <div class="box">
+                        <img src="img/new1.jpg" alt="">
+                        <div class="box-text">
+                            <h2>Subway Surfers</h2>
+                            <h3>Arcade</h3>
+                            <a href="#" class="btn2">Buy Credit</a>
+                        </div>
+                </div>
+            <!--box2-->
+            <div class="box">
+                <img src="img/new2.jpg" alt="">
+                <div class="box-text">
+                    <h2>Call of Duty: Mobile</h2>
+                    <h3>Action</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+            <!--box3-->
+            <div class="box">
+                <img src="img/new3.jpg" alt="">
+                <div class="box-text">
+                    <h2>Free Guy</h2>
+                    <h3>Survival</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+            <!--box4-->
+            <div class="box">
+                <img src="img/new4.jpg" alt="">
+                <div class="box-text">
+                    <h2>Clash Royale</h2>
+                    <h3>Strategy</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+            <!--box5-->
+            <div class="box">
+                <img src="img/new5.png" alt="">
+                <div class="box-text">
+                    <h2>Minecraft</h2>
+                    <h3>Survival</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+            <!--box6-->
+            <div class="box">
+                <img src="img/new6.png" alt="">
+                <div class="box-text">
+                    <h2>PUBG</h2>
+                    <h3>Action</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+            <!--box7-->
+            <div class="box">
+                <img src="img/new7.png" alt="">
+                <div class="box-text">
+                    <h2>Fortnite</h2>
+                    <h3>Battle Royale</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+            <!--box8-->
+            <div class="box">
+                <img src="img/new8.jpg" alt="">
+                <div class="box-text">
+                    <h2>Marvel Champions</h2>
+                    <h3>Action</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+            <!--box9-->
+            <div class="box">
+                <img src="img/new9.jpg" alt="">
+                <div class="box-text">
+                    <h2>Arknights</h2>
+                    <h3>Sci-Fi</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+            <!--box10-->
+            <div class="box">
+                <img src="img/new10.jpg" alt="">
+                <div class="box-text">
+                    <h2>Fate Grand Orders</h2>
+                    <h3>Fantasy</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+            <!--box11-->
+            <div class="box">
+                <img src="img/new11.jpg" alt="">
+                <div class="box-text">
+                    <h2>Epic Sevens</h2>
+                    <h3>Fantasy</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+             <!--box12-->
+             <div class="box">
+                <img src="img/new14.jpg" alt="">
+                <div class="box-text">
+                    <h2>Reverse 1999</h2>
+                    <h3>History</h3>
+                    <a href="#" class="btn2">Buy Credit</a>
+                </div>
+            </div>
+        </div>         
+     </div>   
+                
+    <div class="next-page">
+        <a href="#">Next Page</a>
+    </div>           
+    </section>
+    <!--Feature Game end-->
+
+    <!-- POPUP SECTION -->
+    <div class="popup">
+        <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button> <!-- CLOSE BUTTON -->
+        <div class="form">
+            <h2>Log in</h2>
+            <!-- EMAIL -->
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <span id="email-validation-message"></span> <!-- Email validation message -->
+            </div>
+
+        <!-- PASSWORD -->
+        <div class="form-element">
+            <label for="password">Password</label>
+            <div class="password-input-container">
+                <input type="password" id="password" placeholder="Enter password">
+                <i class="fa-solid fa-eye" id="eye-icon"></i>
+                <i class="fa-solid fa-eye-slash" id="eye-slash-icon"></i>
+            </div>
+            <span id="password-validation-message"></span> <!-- Password validation message -->
+        </div>
+
+
+            <!-- REMEMBER ME -->
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+
+            <!-- SIGNIN BUTTON -->
+            <div class="form-element">
+                <button>Log In</button>
+            </div>
+
+            <!-- FORGOT BUTTON -->
+            <div class="form-element">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+
+
+
+     <!--copyright start-->
+     <div class="copyright container">
+        <a href="" class="logo">Gamex<span>Store</span></a>
+        <p>&#169; NetPipol All Right Reserved</p>
+     </div>
+
+
+
+
+
+
+
+
+
+
+    <!--link to swiper file-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--link to js-->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

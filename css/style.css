@@ -1,0 +1,547 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+}
+
+:root {
+    --main-color: #fa5353;
+    --dark-color: #1b182b;
+    --light-color: #322f40;
+    --text-color: hsl(0,0%,91%);
+  }
+::selection{
+    color: var(--text-color);
+    background: var(--main-color);
+}
+section{
+    padding: 4rem 0 3rem;
+}
+img{
+    width: 100%;
+
+}
+
+body{
+    color: var(--text-color);
+    background: var(--dark-color);
+}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+/* header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--dark-color);
+    z-index: 100;
+}
+/* nav bar */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+}
+/* logo */
+.logo{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+}
+.logo span{
+    color: var(--main-color);
+}
+.nav-icon {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.nav-icon .bx{
+    font-size: 20px;
+    height: 44px;
+    width: 44px;
+    display: grid;
+    place-items: center;
+    color: var(--text-color);
+    background: var(--light-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+#bell-icon{
+    position: relative;
+}
+#bell-icon span{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--main-color);
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+
+/* menu before click*/
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: var(--light-color);
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+.menu-icon div{
+    display: block;
+    background: var(--text-color);
+    height: 2px;
+    width: 25px;
+    transition: 0.3s;
+}
+.move .line1{
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+.move .line2{
+    opacity: 0;
+}
+.move .line3{
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* menu after click*/
+.menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 14, 0.9);
+    z-index: 106;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+    clip-path: circle(0% at 100% 0%);
+}
+
+.menu.active{
+    clip-path: circle(144% at 100% 0%);
+}
+
+.menu img{
+    width: 700px;
+}
+.navbar{
+    display: grid;
+    row-gap: 1rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.navbar a{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: 0.2s;
+}
+.navbar a:hover{
+    border-bottom: 4px solid var(--main-color);
+    font-size: 1.8rem;
+}
+
+/*notification*/
+.notification{
+    position: absolute;
+    top: 110%;
+    right: 5rem;
+    background: var(--light-color);
+    width: 300px;
+    height: 350px;
+    border-radius: 0.5rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    clip-path: circle(0% at 100% 0%);
+}
+
+.notification.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.3s;
+}
+
+.notification-box{
+    display: flex;
+    align-items: baseline;
+    column-gap: 1rem;
+    border-radius: 0.5rem;
+    background: var(--dark-color);
+    padding: 10px;
+}
+
+.notification-box .bx{
+    color: #faf102;
+}
+
+.box-color{
+    background: hsl(0, 0%, 100%, 0.4);
+}
+
+.box-color .bx{
+    color: var(--main-color);
+}
+
+/* home*/
+.home{
+    position: relative;
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5rem;
+}
+
+.home img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.4rem;
+    z-index: -1;
+}
+
+.home-text{
+    padding-right: 4rem;
+    text-align: right;
+}
+
+.home-text h1{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.btn{
+    background: var(--main-color);
+    padding: 15px 20px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%, 0% 68%);
+}
+
+.btn:hover{
+    background: var(--light-color);
+    transition: 0.3s all linear;
+}
+
+/*heading*/
+.heading{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.heading .bx{
+    font-size: 21px;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: 10px;
+    border-radius: 5rem;
+}
+
+.heading h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 0.5rem;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.box .box-text{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -0.95px;
+    padding: 20px;
+    background: hsl(227, 14%, 20%,0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 0.5rem;
+
+}
+
+.box .box-text h2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box .box-text h3{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+.btn2{
+    background: var(--main-color);
+    padding: 3px 10px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.btn2:hover{
+    background: var(--dark-color);
+    transition: 0.3s all linear;
+}
+
+/* feature*/
+
+.feature{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.2rem;
+}
+
+.next-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.next-page a{
+    background: var(--main-color);
+    padding: 12px 20px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.next-page a:hover{
+    background: var(--light-color);
+    transition: 0.3s all linear;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright p{
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+
+/* Login Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup.active {
+    display: flex;
+}
+
+.form {
+    background: var(--dark-color); /* Match the homepage background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    color: var(--text-color); /* Match the homepage text color */
+}
+
+.form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--main-color); /* Match the homepage main color */
+}
+
+.form-element {
+    margin-bottom: 15px;
+}
+
+.form-element label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color); /* Match the homepage text color */
+}
+
+.form-element input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc; /* You may adjust this border color */
+    border-radius: 4px;
+}
+
+/* Add this CSS to style the password input container */
+.password-input-container {
+    position: relative;
+}
+
+.password-input-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form-element button {
+    background: var(--main-color); /* Match the homepage main color */
+    color: var(--text-color); /* Match the homepage text color */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-element button:hover {
+    background: var(--light-color); /* Match the homepage light color */
+}
+
+.form-element a {
+    color: var(--main-color); /* Match the homepage main color */
+    text-decoration: none;
+}
+
+.form-element a:hover {
+    text-decoration: underline;
+}
+
+/* Validation Messages (span) */
+.form-element span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: red;
+}
+
+/* ---------------------------------------------------SIGNUP PAGE--------------------------------------------- */
+
+.back-btn {
+    color: var(--main-color); /* Match the homepage main color */
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Signup Form Styles */
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signup .form {
+    background: var(--dark-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    color: var(--text-color);
+    margin: auto;
+}
+
+.signup .form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+.signup .form-element {
+    margin-bottom: 15px;
+}
+
+.signup .form-element label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.signup .form-element input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup .form-element button {
+    background: var(--main-color);
+    color: var(--text-color);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup .form-element button:hover {
+    background: var(--light-color);
+}
+
+.signup .form-element a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.signup .form-element a:hover {
+    text-decoration: underline;
+}
