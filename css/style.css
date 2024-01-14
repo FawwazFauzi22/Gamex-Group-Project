@@ -395,6 +395,7 @@ header{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--main-color);
     width: 300px;
     text-align: center;
     color: var(--text-color); /* Match the homepage text color */
@@ -414,22 +415,24 @@ header{
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: var(--text-color); /* Match the homepage text color */
+    color: white; /* Match the homepage text color */
 }
 
 .form-element input {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc; /* You may adjust this border color */
+    border: 2px solid var(--main-color);
     border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
 
-/* Add this CSS to style the password input container */
 .password-input-container {
     position: relative;
 }
 
 .password-input-container i {
+    color: var(--main-color);
     position: absolute;
     top: 50%;
     right: 10px;
@@ -469,79 +472,84 @@ header{
 
 /* ---------------------------------------------------SIGNUP PAGE--------------------------------------------- */
 
-.back-btn {
-    color: var(--main-color); /* Match the homepage main color */
-    cursor: pointer;
-    font-size: 1rem;
-    margin-bottom: 10px; /* Adjust margin as needed */
-}
-
-.back-btn:hover {
-    text-decoration: underline;
-}
-
 /* Signup Form Styles */
-.signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+.container-signup {
+    position: relative;
     height: 100vh;
+    overflow: hidden;
+    display: flex;
 }
 
-.signup .form {
-    background: var(--dark-color);
+.background {
+    flex: 1;
+    background: url('img/battlefield.jpg') center/cover no-repeat;
+    z-index: -1;
+}
+
+.signup-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-    color: var(--text-color);
-    margin: auto;
 }
 
-.signup .form h2 {
+.signup-form .form {
+    background: --light-color;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--main-color);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.signup-form .form h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: var(--main-color);
+    color: --main-color;
 }
 
-.signup .form-element {
+.signup-form .form-element {
     margin-bottom: 15px;
 }
 
-.signup .form-element label {
+.signup-form .form-element label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: var(--text-color);
+    color: #fff;
 }
 
-.signup .form-element input {
+.signup-form .form-element input {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid var(--main-color);
     border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
 
-.signup .form-element button {
+.signup-form .form-element button {
     background: var(--main-color);
-    color: var(--text-color);
+    color: #fff;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.signup .form-element button:hover {
-    background: var(--light-color);
+.signup-form .form-element button:hover {
+    background: var(--main-color);
 }
 
-.signup .form-element a {
+.signup-form .form-element a {
     color: var(--main-color);
     text-decoration: none;
 }
 
-.signup .form-element a:hover {
+.form-element a:hover {
     text-decoration: underline;
 }

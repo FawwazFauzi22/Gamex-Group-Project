@@ -269,8 +269,11 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
+        // Simulate a brief delay (2 seconds) for the login process
+        alert('Signing in your account. Please wait...');
+
         // Redirect to the homepage after successful signup
-        window.location.href = 'file:///G:/DEGREE/ITT588_Front-End/GroupWork/homepage.html';
+        window.location.href = 'file:///G:/DEGREE/ITT588_Front-End/GroupWork/Gamex-Group-Project/homepage.html#';
     });
 
     // Function to check if the entered email is in a valid format
