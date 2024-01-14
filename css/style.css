@@ -483,7 +483,9 @@ header{
 
 .background {
     flex: 1;
-    background: url('img/battlefield.jpg') center/cover no-repeat;
+    height: 100vh;
+    background: url('../img/signup.jpg') center/cover no-repeat;
+    background-position: left; /* Adjust this value as needed */
     z-index: -1;
 }
 
